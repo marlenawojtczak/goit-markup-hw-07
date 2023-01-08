@@ -1,0 +1,110 @@
+.footer {
+    background-color: $bgColor;
+
+    &__container {
+        display: flex;
+    }
+    &__logo-container {
+        padding-top: 60px;
+    }
+}
+.address {
+    color: rgba(255, 255, 255, 0.6);
+    padding-top: 20px;
+    padding-bottom: 60px;
+
+    &__link {
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        font-style: normal;
+        color: rgba(255, 255, 255, 0.6);
+        display: flex;
+        padding-top: 9px;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link:is(:hover, :focus) {
+        color: $backlightColor;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        color: $fontColorSecondary;
+        font-style: normal;
+    }
+
+    &__link--decoration {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: underline;
+    }
+}
+.socials {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    margin-top: 72px;
+    margin-left: 70px;
+
+    &__container {
+        width: 206px;
+        display: flex;
+        justify-content: space-between;
+        fill: #fff;
+        padding-top: 20px;
+        margin-left: 70px;
+    }
+}
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 72px;
+    margin-left: 78px;
+
+    &__container {
+        display: flex;
+        gap: 12px;
+    }
+    &__label {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    &__input {
+        width: 358px;
+        height: 50px;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        text-indent: 16px;
+    }
+    &__input::placeholder {
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    &__input[placeholder] {
+        color: #fff;
+    }
+    &__icon {
+        fill: #fff;
+        margin-left: 24px;
+        position: absolute;
+        bottom: 0;
+        margin-left: 24px;
+        transform: translateY(-50%);
+    }
+}

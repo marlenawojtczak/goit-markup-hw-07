@@ -1,0 +1,31 @@
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    &__icon {
+        width: 270px;
+        height: 120px;
+        background-color: #f5f4fa;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: $fontColorTertiary;
+        padding-top: 10px;
+    }
+}

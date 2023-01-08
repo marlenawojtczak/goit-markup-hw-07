@@ -1,0 +1,32 @@
+.offer {
+    margin-top: -94px;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+        gap: 45px;
+        position: relative;
+    }
+
+    &__image {
+        display: block;
+    }
+
+    &__description {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+        color: #fff;
+        text-transform: uppercase;
+        width: 370px;
+        height: 70px;
+        background-color: rgba(47, 48, 58, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+    }
+}

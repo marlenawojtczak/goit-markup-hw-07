@@ -1,0 +1,24 @@
+.clients {
+    display: flex;
+    justify-content: space-between;
+
+    &-icon {
+        width: 170px;
+        height: 92px;
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        fill: $elementColorSecondary;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &-icon:is(:hover, :focus) {
+        fill: $backlightColor;
+        border: 1px solid $backlightColor;
+        cursor: pointer;
+    }
+}
