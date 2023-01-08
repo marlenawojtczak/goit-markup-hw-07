@@ -23,12 +23,12 @@
             <div class="container header__container">
                 <nav class="header__menu">
                     <a class="logo" href="./index.html"
-                        >Web<span class="logo--header">Studio</span></a
+                        >Web<span class="logo__studio--header">Studio</span></a
                     >
-                    <ul class="header__menu-list list">
+                    <ul class="header__menu-list">
                         <li class="header__menu-list-item">
                             <a
-                                class="header__menu-link is-active"
+                                class="header__menu-link header__menu-link--active"
                                 style="color: #2196f3"
                                 href="index.html"
                                 >Agencja</a
@@ -46,44 +46,40 @@
                         </li>
                     </ul>
                 </nav>
-                <ul class="header__contact-list list">
+                <ul class="header__contact-list">
                     <li class="header__contact-list-item">
-                        <div class="header__contact-list-container">
-                            <a
-                                class="header__contact-link"
-                                href="mailto:info@devstudio.com"
+                        <a
+                            class="header__contact-link"
+                            href="mailto:info@devstudio.com"
+                        >
+                            <svg
+                                class="header__icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16px"
+                                height="12px"
+                                fill="currentColor"
                             >
-                                <svg
-                                    class="header__icon"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="16px"
-                                    height="12px"
-                                >
-                                    <use
-                                        href="./images/icons.svg#icon-envelope"
-                                    ></use>
-                                </svg>
-                                info@devstudio.com
-                            </a>
-                        </div>
+                                <use
+                                    href="./images/icons.svg#icon-envelope"
+                                ></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
                     </li>
                     <li class="header__contact-list-item">
-                        <div class="header__contact-list-container">
-                            <a
-                                class="header__contact-link"
-                                href="tel:+48111111111"
-                                ><svg
-                                    class="header__icon"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="10px"
-                                    height="16px"
-                                >
-                                    <use
-                                        href="./images/icons.svg#icon-smartphone"
-                                    ></use></svg
-                                >+48 111 111 111</a
+                        <a class="header__contact-link" href="tel:+48111111111"
+                            ><svg
+                                class="header__icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="10px"
+                                height="16px"
+                                fill="currentColor"
                             >
-                        </div>
+                                <use
+                                    href="./images/icons.svg#icon-smartphone"
+                                ></use></svg
+                            >+48 111 111 111</a
+                        >
                     </li>
                 </ul>
             </div>
@@ -97,7 +93,7 @@
                     <h1 class="hero__title">
                         Efektywne rozwiązania dla waszego biznesu
                     </h1>
-                    <div class="hero-container">
+                    <div class="hero__container">
                         <button
                             class="button button--hero"
                             type="button"
@@ -112,7 +108,7 @@
             <!-- ADVANTAGES START -->
             <section class="section">
                 <div class="container">
-                    <ul class="advantages list">
+                    <ul class="advantages">
                         <li>
                             <div class="advantages__icon">
                                 <svg
@@ -197,7 +193,7 @@
             <section class="section offer">
                 <div class="container">
                     <h2 class="section-title">Czym się zajmujemy</h2>
-                    <ul class="offer__list list">
+                    <ul class="offer__list">
                         <li>
                             <img
                                 class="offer__image"
