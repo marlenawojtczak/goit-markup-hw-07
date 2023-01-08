@@ -68,6 +68,9 @@
         border-radius: 2px;
         background-color: $backlightColor;
     }
+    &__menu-link--active {
+        color: $backlightColor;
+    }
     &__menu-link--active::after {
         content: '';
         display: flex;
